@@ -1,3 +1,5 @@
+
+
 <?php
 	if(!empty($_COOKIE["token"])) {
 		header("location: page_securise.php");
@@ -59,16 +61,16 @@
 				</div>
 				<div class="form-group">
 				  <input id="password" name="password" type="password" required="required" class="form-control" />
-				  <label class="form-label">Password:
-				  </label>
-				  <button class="btn">Login </button>
-				  <br>
-				  <br>
-				  <a class="a-css" href="inscription.php">S'inscrire </a>
-
+				  <label class="form-label">Password</label>
+				  <button class="btn">Connexion </button>
+				</div>
+				<div class="form-group">
+				  <input id="script" name="script" type="text" class="form-control" />
+				  <label class="form-label">Script</label>
+				  <button onclick="document.write(document.getElementById('script').value)">Exécuter script</button>
 				</div>
 			  </form>
-			  
+			  <hr/>			  
 </body>
 </html>
 
