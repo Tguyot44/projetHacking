@@ -10,6 +10,20 @@
 	<head>
 	<meta charset="UTF-8">
 			<link rel="stylesheet" type="text/css" href="style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			<script>
+				// Panda Eye move
+				$(document).on("mousemove", function(event) {
+				var dw = $(document).width() / 15;
+				var dh = $(document).height() / 15;
+				var x = event.pageX / dw;
+				var y = event.pageY / dh;
+				$(".eye-ball").css({
+					width: x,
+					height: y
+				});
+				});
+			</script>
 	</head>
 <body>
 		<div class="panda">

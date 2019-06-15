@@ -37,8 +37,6 @@
 				
 				setcookie("token", $token);
 				
-				printf($token);
-				
 				$stmt = $bdd->prepare("UPDATE user SET token = :token WHERE userid = :userid");
 				$stmt -> bindParam(':userid', $row["userid"]);
 				$stmt -> bindParam(':token', $token);
@@ -51,13 +49,6 @@
 	
 			
 	if($connected) {
-		
-		$stmtSearchUser = $bdd->prepare("SELECT username FROM user;");
-		if($stmtSearchUser->execute()) {
-			while ($row = $stmtSearchUser->fetch()) {
-				echo $row["username"] . "<br/>";
-			}
-		}
 ?>
 
 
@@ -66,6 +57,20 @@
 	<head>
 	<meta charset="UTF-8">
 			<link rel="stylesheet" type="text/css" href="style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			<script>
+				// Panda Eye move
+				$(document).on("mousemove", function(event) {
+				var dw = $(document).width() / 15;
+				var dh = $(document).height() / 15;
+				var x = event.pageX / dw;
+				var y = event.pageY / dh;
+				$(".eye-ball").css({
+					width: x,
+					height: y
+				});
+				});
+			</script>
 	</head>
 <body>
 		<div class="panda">
@@ -94,6 +99,16 @@
 				<div class="hand"></div>
 				<div class="hand rgt"></div>
 				<h1>Super tu es connecté !</h1>
+				<br/>
+				<?php
+					$stmtSearchUser = $bdd->prepare("SELECT username FROM user;");
+					if($stmtSearchUser->execute()) {
+						while ($row = $stmtSearchUser->fetch()) {
+							echo $row["username"] . "<br/>";
+						}
+					}
+				?>
+				<br/>
 				<div class="form-group">
 
 				  <button class="btn">Déconnexion </button>
@@ -109,6 +124,20 @@
 	<head>
 	<meta charset="UTF-8">
 			<link rel="stylesheet" type="text/css" href="style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			<script>
+				// Panda Eye move
+				$(document).on("mousemove", function(event) {
+				var dw = $(document).width() / 15;
+				var dh = $(document).height() / 15;
+				var x = event.pageX / dw;
+				var y = event.pageY / dh;
+				$(".eye-ball").css({
+					width: x,
+					height: y
+				});
+				});
+			</script>
 	</head>
 <body>
 		<div class="panda">
