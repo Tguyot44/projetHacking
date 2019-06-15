@@ -23,7 +23,8 @@
 			}
 		}
 		
-	} else if($stmt->execute()) {
+	}
+	if(!$connected && $stmt->execute()) {
 		$row = $stmt->fetch();
 		if(!empty($row["userid"])) {
 			
@@ -49,7 +50,7 @@
 <?php
 	} else {
 ?>
-	<h1>Nop, cherche pas</h1>
+	<h1>Nope, cherche pas</h1>
 	<a href="index.html">Retour</a>
 <?php
 	}
