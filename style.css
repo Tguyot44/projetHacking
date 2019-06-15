@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #cc3367;
+  background: #3381cc;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
@@ -231,7 +231,7 @@ form.up {
 }
 
 h1 {
-  color: #FF4081;
+  color: #3381cc;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -240,16 +240,16 @@ h1 {
   padding: 5px;
   width: 150px;
   height: 35px;
-  border: 1px solid #FF4081;
+  border: 1px solid #3381cc;
   margin-top: 25px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0 50px #FF4081 inset;
+  box-shadow: 0 50px #3381cc inset;
   color: #fff;
 }
 .btn:hover {
-  box-shadow: 0 0 #FF4081 inset;
-  color: #FF4081;
+  box-shadow: 0 0 #3381cc inset;
+  color: #3381cc;
 }
 .btn:focus {
   outline: none;
@@ -287,12 +287,12 @@ h1 {
 }
 .form-group .form-control:focus, .form-group .form-control:valid {
   outline: none;
-  box-shadow: 0 1px #FF4081;
-  border-color: #FF4081;
+  box-shadow: 0 1px #3381cc;
+  border-color: #3381cc;
 }
 .form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
   font-size: 12px;
-  color: #FF4081;
+  color: #3381cc;
   -webkit-transform: translateY(-15px);
   transform: translateY(-15px);
 }
