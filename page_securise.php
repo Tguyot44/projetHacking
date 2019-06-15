@@ -37,8 +37,6 @@
 				
 				setcookie("token", $token);
 				
-				printf($token);
-				
 				$stmt = $bdd->prepare("UPDATE user SET token = :token WHERE userid = :userid");
 				$stmt -> bindParam(':userid', $row["userid"]);
 				$stmt -> bindParam(':token', $token);
