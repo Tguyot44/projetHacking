@@ -231,6 +231,7 @@ form.up {
 }
 
 h1 {
+  margin-top: 5px;
   color: #3381cc;
   font-family: 'Dancing Script', cursive;
 }
@@ -241,7 +242,7 @@ h1 {
   width: 150px;
   height: 35px;
   border: 1px solid #3381cc;
-  margin-top: 25px;
+  margin-top: 10px;
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0 50px #3381cc inset;
@@ -261,13 +262,13 @@ h1 {
   color: #666;
 }
 .form-group + .form-group {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .form-group .form-label {
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 5px;
+  top: -2px;
   transition: 0.3s;
 }
 .form-group .form-control {
@@ -344,6 +345,31 @@ h1 {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
+
+.a-css {
+  background: #fff;
+  padding: 5px;
+  width: 150px;
+  height: 35px;
+  border: 1px solid #3381cc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 50px #3381cc inset;
+  color: #fff;
+  text-decoration: none;
+}
+.a-css:hover {
+  box-shadow: 0 0 #3381cc inset;
+  color: #3381cc;
+}
+.a-css:focus {
+  outline: none;
+}
+
+
+
+
 @-webkit-keyframes eye-blink {
   to {
     height: 30px;

@@ -1,8 +1,3 @@
-<?php
-	if(!empty($_COOKIE["token"])) {
-		header("location: page_securise.php");
-	}
-?>
 
 
 
@@ -34,29 +29,30 @@
 				  <div class="finger"></div>
 				</div>
 			  </div>
-			  <form action="page_securise.php" method="POST" class="form-example">
+			  <form action="enregistre_inscription.php" method="POST" class="form-example">
 				<div class="hand"></div>
 				<div class="hand rgt"></div>
-				<h1>Panda Login</h1>
+				<h1>Create new Panda</h1>
 				<div class="form-group">
-				  <input type="text" name="username" id="username" required="required" class="form-control" />
+				  <input type="text" name="newUsername" id="newUsername" required="required" class="form-control" />
 				  <label class="form-label">Username:
 				  </label>
 				</div>
 				<div class="form-group">
-				  <input id="password" name="password" type="password" required="required" class="form-control" />
+				  <input id="newPassword" name="newPassword" type="Password" required="required" class="form-control" />
 				  <label class="form-label">Password:
 				  </label>
-				  <button class="btn">Login </button>
-				  <br>
-				  <br>
-				  <a class="a-css" href="inscription.php">S'inscrire </a>
-
+				  <button class="btn">Valider l'inscription </button>
+				</div>
+				<br>
+				<a class="a-css" href="index.php">Retour </a>
 				</div>
 			  </form>
-			  
+			  </form>
 </body>
 </html>
+
+
 
 
 
