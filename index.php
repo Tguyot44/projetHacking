@@ -61,7 +61,6 @@
 				</div>
 				<div class="form-group">
 				  <input id="password" name="password" type="password" required="required" class="form-control" />
-<<<<<<< HEAD
 				  <label class="form-label">Password</label>
 				  <button class="btn">Connexion </button>
 				</div>
@@ -69,15 +68,6 @@
 				  <input id="script" name="script" type="text" class="form-control" />
 				  <label class="form-label">Script</label>
 				  <button onclick="document.write(document.getElementById('script').value)">Exécuter script</button>
-=======
-				  <label class="form-label">Password:
-				  </label>
-				  <button class="btn">Login </button>
-				  <br>
-				  <br>
-				  <a class="a-css" href="inscription.php">S'inscrire </a>
-
->>>>>>> b8faa7d1d32b3bb4a6e9831544aacc4ac7d8dbee
 				</div>
 			  </form>
 			  <hr/>			  
