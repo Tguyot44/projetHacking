@@ -1,11 +1,7 @@
 <?php
-
 	if(!empty($_COOKIE["token"])) {
-		
 		header("location: page_securise.php");
-		
 	}
-
 ?>
 
 <html>
