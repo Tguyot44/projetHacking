@@ -27,8 +27,8 @@
 	
 	if(!$connected) {
 		$stmt = $bdd->prepare("SELECT userid FROM user WHERE username = :username AND password = :password;");
-		$stmtVerifToken -> bindParam(':username', $_POST["username"]);
-		$stmtVerifToken -> bindParam(':password', $_POST["password"]);
+		$stmt -> bindParam(':username', $_POST["username"]);
+		$stmt -> bindParam(':password', $_POST["password"]);
 		if($stmt->execute()) {
 			$row = $stmt->fetch();
 			if(!empty($row["userid"])) {
