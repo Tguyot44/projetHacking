@@ -50,6 +50,9 @@
 			
 	if($connected) {
 ?>
+
+
+
 	<html>
 	<head>
 	<meta charset="UTF-8">
