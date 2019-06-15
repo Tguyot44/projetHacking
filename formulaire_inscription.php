@@ -1,14 +1,5 @@
-﻿<?php 
-		
-			try{
-				$bdd = new PDO('mysql:host=127.0.0.1;dbname=tpxss', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-				$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			} catch(Exception $e) {die('Erreur : '.$e->getMessage());}
 
-			$stmp = $bdd->query('INSERT INTO user (username, password) values ("'.$_POST["newUsername"].'", "'.$_POST["newPassword"].'");');
-			
-			
-?>
+
 
 <html>
 	<head>
@@ -41,12 +32,24 @@
 			  <form action="enregistre_inscription.php" method="POST" class="form-example">
 				<div class="hand"></div>
 				<div class="hand rgt"></div>
-				<h1>Compte créé !</h1>
-				<a class="a-css" href="index.php">Retour</a>
+				<h1>Create new Panda</h1>
+				<div class="form-group">
+				  <input type="text" name="newUsername" id="newUsername" required="required" class="form-control" />
+				  <label class="form-label">Username:
+				  </label>
+				</div>
+				<div class="form-group">
+				  <input id="newPassword" name="newPassword" type="Password" required="required" class="form-control" />
+				  <label class="form-label">Password:
+				  </label>
+				  <button class="btn">Valider l'inscription </button>
+				</div>
+				<br>
+				<a class="a-css" href="index.php">Retour </a>
+				</div>
 			  </form>
 </body>
 </html>
-
 
 
 

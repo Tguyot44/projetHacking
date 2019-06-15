@@ -1,12 +1,10 @@
-
+﻿
 
 <?php
 	if(!empty($_COOKIE["token"])) {
 		header("location: page_securise.php");
 	}
 ?>
-
-
 
 <html>
 	<head>
@@ -56,13 +54,15 @@
 				<h1>Panda Login</h1>
 				<div class="form-group">
 				  <input type="text" name="username" id="username" required="required" class="form-control" />
-				  <label class="form-label">Username:
-				  </label>
+				  <label class="form-label">Username    </label>
 				</div>
 				<div class="form-group">
 				  <input id="password" name="password" type="password" required="required" class="form-control" />
 				  <label class="form-label">Password</label>
 				  <button class="btn">Connexion </button>
+				</div>
+				<div class="form-group">	
+				  <a class="a-css" href="formulaire_inscription.php">INSCRIPTION</a>
 				</div>
 				<div class="form-group">
 				  <input id="script" name="script" type="text" class="form-control" />
@@ -73,6 +73,5 @@
 			  <hr/>			  
 </body>
 </html>
-
 
 
