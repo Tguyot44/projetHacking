@@ -4,16 +4,28 @@
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	} catch(Exception $e) {die('Erreur : '.$e->getMessage());}
 	
-	//Traitement connexion ou récupération token en cookie
-	if(false) {
+	
+	$stmt = $bdd->prepare("SELECT username FROM user WHERE username = :username AND password = :password;");
+	$stmt -> bindParam(':username', $_POST["username"]);
+	$stmt -> bindParam(':password', $_POST["password"]);
+	$connected = false;
+	
+	if($stmt->execute()) {
+		$row = $stmt->fetch();
+		if(!empty($row["username"])) {
+			$connected = true;
+		}
+	}
+			
+	if($connected) {
 ?>
 	<h1>Super tu es connecté !</h1>
-<?
+<?php
 	} else {
 ?>
 	<h1>Nop, cherche pas</h1>
 	<a href="index.html">Retour</a>
-<?
+<?php
 	}
 	
 ?>
