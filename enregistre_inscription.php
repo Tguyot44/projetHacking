@@ -6,7 +6,7 @@
 			} catch(Exception $e) {die('Erreur : '.$e->getMessage());}
 	
 	echo $_POST["newUsername"];
-	
-			$stmp = $bdd->prepare('INSERT INTO user (username, password) values (username= "'.$_POST["newUsername"].'", password="'.$_POST["newPassword"].'");');
-			$stmp->execute();
+	var_dump($_POST);
+			$stmp = $bdd->query('INSERT INTO user (username, password) values ("'.$_POST["newUsername"].'", "'.$_POST["newPassword"].'");');
+			#$stmp->execute();
 ?>
