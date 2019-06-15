@@ -18,7 +18,12 @@
 		if($stmtVerifToken->execute()) {
 			$verifTokenRow = $stmtVerifToken->fetch();
 			
-			if(!empty($verifTokenRow["userid"])) {
+			if(empty($verifTokenRow["userid"])) {
+				
+				setcookie('token', null);
+				header("location: index.php");
+				
+			} else {
 				$connected = true;
 			}
 		}

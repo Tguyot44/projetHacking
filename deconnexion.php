@@ -2,6 +2,6 @@
 
 	setcookie('token', null);
 	
-	header("location: index.html");
+	header("location: index.php");
 	
 ?>
