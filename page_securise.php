@@ -46,13 +46,87 @@
 			
 	if($connected) {
 ?>
-	<h1>Super tu es connecté !</h1>
-	<a href="deconnexion.php">Déconnexion</a>
+	<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+		<div class="panda">
+				<div class="ear"></div>
+				<div class="face">
+				  <div class="eye-shade"></div>
+				  <div class="eye-white">
+					<div class="eye-ball"></div>
+				  </div>
+				  <div class="eye-shade rgt"></div>
+				  <div class="eye-white rgt">
+					<div class="eye-ball"></div>
+				  </div>
+				  <div class="nose"></div>
+				  <div class="mouth"></div>
+				</div>
+				<div class="body"> </div>
+				<div class="foot">
+				  <div class="finger"></div>
+				</div>
+				<div class="foot rgt">
+				  <div class="finger"></div>
+				</div>
+			  </div>
+			  <form action="deconnexion.php" method="POST" class="form-example">
+				<div class="hand"></div>
+				<div class="hand rgt"></div>
+				<h1>Super tu es connecté !</h1>
+				<div class="form-group">
+
+				  <button class="btn">Déconnexion </button>
+				</div>
+			  </form>
+
+</body>
+</html>
 <?php
 	} else {
 ?>
-	<h1>Nope, cherche pas</h1>
-	<a href="index.html">Retour</a>
+<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+		<div class="panda">
+				<div class="ear"></div>
+				<div class="face">
+				  <div class="eye-shade"></div>
+				  <div class="eye-white">
+					<div class="eye-ball"></div>
+				  </div>
+				  <div class="eye-shade rgt"></div>
+				  <div class="eye-white rgt">
+					<div class="eye-ball"></div>
+				  </div>
+				  <div class="nose"></div>
+				  <div class="mouth"></div>
+				</div>
+				<div class="body"> </div>
+				<div class="foot">
+				  <div class="finger"></div>
+				</div>
+				<div class="foot rgt">
+				  <div class="finger"></div>
+				</div>
+			  </div>
+			  <form action="index.php" method="POST" class="form-example">
+				<div class="hand"></div>
+				<div class="hand rgt"></div>
+				<h1>Nope, cherche pas</h1>
+				<div class="form-group">
+
+				  <button class="btn">Retour </button>
+				</div>
+			  </form>
+
+</body>
+</html>
 <?php
 	}
 	
