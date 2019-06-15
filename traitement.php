@@ -47,6 +47,7 @@
 	if($connected) {
 ?>
 	<h1>Super tu es connecté !</h1>
+	<a href="deconnexion.php">Déconnexion</a>
 <?php
 	} else {
 ?>
