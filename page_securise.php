@@ -51,13 +51,6 @@
 	
 			
 	if($connected) {
-		
-		$stmtSearchUser = $bdd->prepare("SELECT username FROM user;");
-		if($stmtSearchUser->execute()) {
-			while ($row = $stmtSearchUser->fetch()) {
-				echo $row["username"] . "<br/>";
-			}
-		}
 ?>
 	<html>
 	<head>
@@ -91,6 +84,16 @@
 				<div class="hand"></div>
 				<div class="hand rgt"></div>
 				<h1>Super tu es connecté !</h1>
+				<br/>
+				<?php
+					$stmtSearchUser = $bdd->prepare("SELECT username FROM user;");
+					if($stmtSearchUser->execute()) {
+						while ($row = $stmtSearchUser->fetch()) {
+							echo $row["username"] . "<br/>";
+						}
+					}
+				?>
+				<br/>
 				<div class="form-group">
 
 				  <button class="btn">Déconnexion </button>
